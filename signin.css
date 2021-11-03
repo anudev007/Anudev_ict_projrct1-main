@@ -1,0 +1,164 @@
+
+.navbar{
+  background-image: linear-gradient(-90deg,#93291E,#E94057,#F27121);
+}
+
+h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2vw;
+  font-weight: 600;
+  color: rgba(245, 234, 234, 0.979);
+}
+
+.nav-link{
+  font-size: 16px;
+  margin: 3px;
+  color: #ffff!important;
+  font-weight: 500;
+}
+
+.navbar-nav{
+  text-align: right;
+  margin-right: 20px;
+}
+
+.menubar.navbar-toggler{
+  padding-right: 20px;
+  outline: none!important;
+  border: none!important;
+}
+
+.navbar .fa{
+  color: #fff!important;
+  font-size: 26px;
+}
+
+.nav-link:hover{
+  font-weight: 600;
+  border-bottom: 1px solid #ffff;
+}
+
+.navbar-brand img{
+  width: 80px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+h3{
+  font-weight: 600;
+  color: rgb(233, 220, 220);
+}
+.sidebar{
+  /* margin-top: 10%; */
+  position: absolute; 
+  left: auto;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 2vw;
+  z-index: 2;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 20%;
+} 
+
+.form-inline .form-control:hover{
+  border: 1px solid white;
+  color:#c0c0aa;
+  caret-color:#e91e63;
+}
+
+
+.form-inline .btn{
+  color:#fff ;
+  border:whitesmoke;
+  border: 2px solid #fff;
+  }
+
+.form-inline .btn:hover{
+  color: #c0c0aa;
+  background-color:white;
+  font-weight: 600;
+}
+
+html,
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: "Nunito",sans-serif;
+}
+
+#success_message{ display: none;}
+
+body {
+  height: 100%;
+}
+
+body {
+  
+  padding-top:50px;
+  background-image: linear-gradient(-90deg,#232526,#414345);
+}
+
+fieldset {
+  border: thin solid #ccc; 
+  border-radius: 4px;
+  padding: 20px;
+  padding-left: 40px;
+  background: #fbfbfb;
+}
+legend {
+ color: #678;
+}
+.form-control {
+  width: 95%;
+}
+label small {
+  color: #678 !important;
+}
+span.req {
+  color:maroon;
+  font-size: 112%;
+}
+
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+  color: rgb(236, 223, 223);
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+.foot p{
+  color: #121121;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
