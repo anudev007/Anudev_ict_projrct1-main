@@ -5,6 +5,7 @@ function checkPass()
     var message = document.getElementById('confirmMessage');
     var goodColor = "#66cc66";
     var badColor = "#ff6666";
+    let pass3=/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/
     if(pass1.value == pass2.value){
         
         pass2.style.backgroundColor = goodColor;
@@ -14,8 +15,9 @@ function checkPass()
 
         pass2.style.backgroundColor = badColor;
         message.style.color = badColor;
-        message.innerHTML = "Passwords Do Not Match!"
+        message.innerHTML = "Passwords Do Not Match!"   
     }
+    
 } 
 function validatephone(phone) 
 {
@@ -75,4 +77,31 @@ var regAdd = /^(?=.*\d)[a-zA-Z\s\d\/]+$/;
     {
     document.getElementById("statusAdd").innerHTML	= "<span class='valid'>Thanks, Address looks valid!</span>";	
     }
+}
+function validatePassword() {
+    var p = document.getElementById('pass1').value,
+        errors = [];
+    if (p.length < 8) {
+        errors.push("Your password must be at least 8 characters"); 
+    }
+    if (p.search(/[a-z]/i) < 0) {
+        errors.push("Your password must contain at least one letter.");
+    }
+    if (p.search(/[a-z]/) < 0)
+       { errors.push("Your password must contain at least one lowercase letter.")  }
+    if (p.search(/[A-Z]/) < 0)
+     {errors.push("Your password must contain at least one uppercase letter.")}
+    if (p.search(/[0-9]/) < 0) {
+        errors.push("Your password must contain at least one digit."); 
+    }
+    if (errors.length > 0) {
+        alert(errors.join("\n"));
+        const form = document.querySelector('form')
+        form.reset()
+
+
+        return false;
+    }
+    else{
+    return true;}
 }
